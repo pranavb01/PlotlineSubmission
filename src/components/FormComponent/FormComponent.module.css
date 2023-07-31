@@ -1,0 +1,77 @@
+/* src/styles/FormContainer.module.css */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: left;
+    border-radius: 23.395px;
+    background: var(--grey-200, #F5F5F5);
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .form-container label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 18px; /* 112.5% */
+    margin-bottom: 5px;
+  }
+  
+  .form-container select,
+  .form-container input {
+    display: flex;
+    align-items: flex-start;
+    height: 30px;
+    width: 400px;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 5px 12px;
+    font-size: 16px;
+    color: #000;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 112.5% */
+    margin-bottom: 10px;
+  }
+  
+  /* Add a new CSS class for input fields in a single row */
+  .form-container__input-group--single {
+    width: 100%; /* Full width for input fields in a single row */
+    flex-wrap: wrap; /* Ensure the items wrap to the next line if there is not enough space */
+    gap: 10px;
+    
+  }
+  
+  /* Add a new CSS class for input fields in a two-field row */
+  .form-container__input-group--double {
+    width: 50%; /* Half width for input fields in a two-field row */
+    gap: 10px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .form-container__text-color,
+  .form-container__background-color {
+    display: flex;
+  }
+  
+  .form-container__text-color label,
+  .form-container__background-color label {
+    margin-right: 5px;
+  }
+  
+  .form-container__text-color input,
+  .form-container__background-color input {
+    flex: 1;
+  }
+  

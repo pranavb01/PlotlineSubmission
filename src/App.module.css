@@ -1,0 +1,48 @@
+/* App.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: #f0f0f0;
+}
+
+.boxForm {
+  width: 862.283px;
+  padding: 851.484px 458.063px 0px 124.106px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 23.395px;
+  background: var(--grey-200, #f5f5f5);
+  box-shadow: -1.6781489849090576px 0px 4.02px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.boxForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputRow {
+  display: flex;
+  gap: 20px;
+}
+
+.mobileContent {
+  width: 307.402px;
+  height: 631.388px;
+  flex-shrink: 0;
+  border-radius: 28.864px;
+  background: #2c2c2c;
+  box-shadow: -1.6781489849090576px 0px 4.02px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Rest of the styling for buttons and tooltip goes here */

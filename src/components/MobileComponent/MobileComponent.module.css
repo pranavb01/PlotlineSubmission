@@ -1,0 +1,74 @@
+/* src/styles/MobileComponent.module.css */
+.mobileContainer {
+    position: relative;
+    width: 340px;
+    height: 750px;
+    background-color: #000;
+    border: 20px solid #000;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mobileScreen {
+    position: relative;
+    width: 300px;
+    height: 690px;
+    background-color: rgb(186, 182, 182);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column; /* Adjust the flex direction to column */
+    justify-content: space-between; /* Space the buttons evenly within the mobile screen */
+    align-content: center; /* Center the buttons vertically */
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  /* Button styles */
+  button {
+    width: 140px;
+    height: 50px;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Position the buttons */
+  .buttonTopLeft {
+    margin-right: 10px;
+  }
+  
+  .buttonTopRight {
+    margin-left: 10px;
+  }
+  
+  .buttonCenter {
+    margin: auto; /* Center Button 3 both horizontally and vertically */
+  }
+  
+  .buttonBottomLeft {
+    margin-right: 10px;
+  }
+  
+  .buttonBottomRight {
+    margin-left: 10px;
+  }
+  
+  /* Position the top row and bottom row */
+  .buttonTopRow {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Add margin to separate top and center buttons */
+  }
+  
+  .buttonBottomRow {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Add margin to separate center and bottom buttons */
+  }
+  

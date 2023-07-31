@@ -1,0 +1,30 @@
+/* src/components/Tooltip.module.css */
+.tooltipContainer {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  width: max-content; /* Set the width to adjust dynamically to the tooltip content */
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  padding: 6px;
+  border-radius: 4px;
+  pointer-events: auto;
+  white-space: nowrap; /* Prevent the text from wrapping */
+  width: max-content; /* Set the width to adjust dynamically to the tooltip content */
+}
+
+.tooltipPointer {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #000;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
