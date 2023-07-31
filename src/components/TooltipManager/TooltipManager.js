@@ -72,8 +72,10 @@ const TooltipManager = () => {
 
   return (
     <div className={styles.tooltipManagerContainer}>
-      <div className={styles.formComponentContainer}>
+      <div className={styles.formContainer}>
         <FormComponent onConfigChange={handleConfigChange} />
+      </div>
+      <div className={styles.mobileContainer}>
         <MobileComponent tooltipConfigs={tooltipConfigs} />
       </div>
     </div>

@@ -1,34 +1,21 @@
-import React, { useState } from 'react';
-import FormComponent from './components/FormComponent/FormComponent';
-import MobileComponent from './components/MobileComponent/MobileComponent';
+import React from 'react';
+import { Provider } from 'react-redux';
+import store from './store/store';
+import TooltipManager from './components/TooltipManager/TooltipManager';
+
 
 const App = () => {
-  const [tooltipConfigs, setTooltipConfigs] = useState({});
-  const [currentTarget, setCurrentTarget] = useState('');
-
-  // Callback function to update tooltip configurations
-  const handleConfigChange = (targetElement, config) => {
-    setTooltipConfigs((prevConfigs) => ({
-      ...prevConfigs,
-      [targetElement]: config,
-    }));
-  };
-
-  // Callback function to update the current target button
-  const handleTargetChange = (event) => {
-    setCurrentTarget(event.target.value);
-  };
-
   return (
-    <div>
-      <FormComponent
-        onConfigChange={handleConfigChange}
-        onTargetChange={handleTargetChange}
-        currentTarget={currentTarget}
-        tooltipConfigs={tooltipConfigs}
-      />
-      <MobileComponent tooltipConfigs={tooltipConfigs} currentTarget={currentTarget} />
-    </div>
+    <Provider store={store}>
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <div style={{ flex: 1, marginRight: '20px' }}>
+          <TooltipManager />
+        </div>
+        <div style={{ flex: 1 }}>
+          {/* Add any other components you want to display on the right side here */}
+        </div>
+      </div>
+    </Provider>
   );
 };
 
