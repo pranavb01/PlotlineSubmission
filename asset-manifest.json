@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PlotlineSubmission/static/css/main.607b2870.css",
+    "main.js": "/PlotlineSubmission/static/js/main.376aa0dd.js",
+    "index.html": "/PlotlineSubmission/index.html",
+    "main.607b2870.css.map": "/PlotlineSubmission/static/css/main.607b2870.css.map",
+    "main.376aa0dd.js.map": "/PlotlineSubmission/static/js/main.376aa0dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.607b2870.css",
+    "static/js/main.376aa0dd.js"
+  ]
+}
