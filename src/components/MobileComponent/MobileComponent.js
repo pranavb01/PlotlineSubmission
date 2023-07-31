@@ -133,7 +133,7 @@ const MobileComponent = ({ tooltipConfigs }) => {
           position={tooltipPosition}
           width={tooltipSize.width}
           height={tooltipSize.height}
-          backgroundColor={tooltipConfigs[currentTarget]?.backgroundColor || '#000000'}
+          backgroundColor={tooltipConfigs[currentTarget]?.backgroundColor}
         />
       )}
     </div>
