@@ -1,4 +1,3 @@
-// src/components/FormComponent/FormComponent.js
 import React, { useState } from 'react';
 import styles from './FormComponent.module.css';
 
@@ -83,6 +82,23 @@ const FormComponent = ({ onConfigChange }) => {
     onConfigChange(targetElement, {
       ...config[targetElement],
       [name]: value,
+    });
+  };
+
+  const handleButtonClick = (event, text) => {
+    setTargetElement(event.target.id);
+    setConfig((prevConfig) => ({
+      ...prevConfig,
+      [targetElement]: {
+        ...prevConfig[targetElement],
+        text: text,
+      },
+    }));
+
+    // Emit the configuration to the parent component
+    onConfigChange(targetElement, {
+      ...config[targetElement],
+      text: text,
     });
   };
 
