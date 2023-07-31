@@ -2,13 +2,15 @@
 .form-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: left;
     border-radius: 23.395px;
     background: var(--grey-200, #F5F5F5);
     margin-top: 100px;
     margin-left: 50px;
-    margin-right: 50px;
+    margin-right: 20px;
+    width: fit-content;
+    padding: 20px;
   }
   
   .form-container label {
@@ -30,7 +32,7 @@
     display: flex;
     align-items: flex-start;
     height: 30px;
-    width: 400px;
+    width: 300px;
     flex-direction: column;
     flex-shrink: 0;
     padding: 5px 12px;
@@ -42,6 +44,7 @@
     font-weight: 500;
     line-height: 18px; /* 112.5% */
     margin-bottom: 10px;
+    padding-left: 20px;
   }
   
   /* Add a new CSS class for input fields in a single row */
@@ -58,6 +61,7 @@
     gap: 10px;
     display: flex;
     margin-bottom: 10px;
+    
   }
   
   .form-container__text-color,

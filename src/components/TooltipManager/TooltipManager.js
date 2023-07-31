@@ -17,11 +17,53 @@ const TooltipManager = () => {
         arrowWidth: 3,
         arrowHeight: 3,
       },
-      // ... other default values for other buttons
+      Button2: {
+        text: 'Default text for this button',
+        textSize: 3,
+        padding: 3,
+        textColor: 'white',
+        backgroundColor: 'black',
+        cornerRadius: 3,
+        tooltipWidth: 3,
+        arrowWidth: 3,
+        arrowHeight: 3,
+      },
+      Button3: {
+        text: 'Default text for this button',
+        textSize: 3,
+        padding: 3,
+        textColor: 'white',
+        backgroundColor: 'black',
+        cornerRadius: 3,
+        tooltipWidth: 3,
+        arrowWidth: 3,
+        arrowHeight: 3,
+      },
+      Button4: {
+        text: 'Default text for this button',
+        textSize: 3,
+        padding: 3,
+        textColor: 'white',
+        backgroundColor: 'black',
+        cornerRadius: 3,
+        tooltipWidth: 3,
+        arrowWidth: 3,
+        arrowHeight: 3,
+      },
+      Button5: {
+        text: 'Default text for this button',
+        textSize: 3,
+        padding: 3,
+        textColor: 'white',
+        backgroundColor: 'black',
+        cornerRadius: 3,
+        tooltipWidth: 3,
+        arrowWidth: 3,
+        arrowHeight: 3,
+      },
   });
 
   const handleConfigChange = (target, config) => {
-    console.log('handleConfigChange:', target, config);
     setTooltipConfigs((prevConfigs) => ({
       ...prevConfigs,
       [target]: config,
@@ -32,8 +74,6 @@ const TooltipManager = () => {
     <div className={styles.tooltipManagerContainer}>
       <div className={styles.formComponentContainer}>
         <FormComponent onConfigChange={handleConfigChange} />
-      </div>
-      <div className={styles.mobileComponentContainer}>
         <MobileComponent tooltipConfigs={tooltipConfigs} />
       </div>
     </div>

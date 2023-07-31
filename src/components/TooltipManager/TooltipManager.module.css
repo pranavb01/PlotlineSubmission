@@ -1,16 +1,16 @@
 /* src/components/TooltipManager.module.css */
 .tooltipManagerContainer {
-    display: flex;
-  }
-  
-  .formComponentContainer {
-    flex: 1;
-    margin-right: 20px; /* Adjust the margin as needed */
-  }
-  
-  .mobileComponentContainer {
-    flex: 1;
-  }
-  
-  /* Add any other styles as needed */
-  
+  display: flex;
+  overflow-x: auto;
+}
+
+.formComponentContainer {
+  width: 50%; /* Set the width to 50% to occupy half of the container */
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.mobileComponentContainer {
+  width: 50%; /* Set the width to 50% to occupy the other half of the container */
+}
+
+/* Add any other styles as needed */
